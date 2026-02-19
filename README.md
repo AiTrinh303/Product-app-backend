@@ -39,3 +39,6 @@ npm run dev            # Run at http://localhost:5000
 | DELETE | /api/products/:id | Yes (JWT)     |
 | POST   | /api/auth/register| No            |
 | POST   | /api/auth/login   | No            |
+
+## Live server
+https://product-app-backend-9dso.onrender.com
