@@ -12,7 +12,13 @@ const authRoutes_1 = __importDefault(require("./routes/authRoutes"));
 dotenv_1.default.config();
 (0, db_1.default)();
 const app = (0, express_1.default)();
-app.use((0, cors_1.default)({ origin: 'http://localhost:5173' }));
+app.use((0, cors_1.default)({
+    origin: [
+        'https://product-app-frontend-vb4p.onrender.com',
+        'http://localhost:5173'
+    ],
+    credentials: true
+}));
 app.use(express_1.default.json());
 app.use('/api/products', productRoutes_1.default);
 app.use('/api/auth', authRoutes_1.default);
